@@ -62,8 +62,23 @@
         app.use('/login', cors(), authLogin);   
         
         const signup = require('./routes/users/register');
-        app.use('/signup', cors(), signup);   
- 
+        app.use('/signup', cors(), signup); 
+        
+        const update = require('./routes/users/update');
+        app.use('/update', cors(), update); 
+
+        const addFavorites = require('./routes/favorites/save_favorites');
+        app.use('/addFavorites', cors(), addFavorites); 
+
+        const fetchFavorites = require('./routes/favorites/fetch_favorites');
+        app.use('/fetchFavorites', cors(), fetchFavorites); 
+
+        const fetchHistory = require('./routes/history/fetch_history');
+        app.use('/fetchHistory', cors(), fetchHistory); 
+
+        const save_history = require('./routes/history/save_history');
+        app.use('/save_history', cors(), save_history); 
+
 
         app.use(bodyParser.json());
         app.use(bodyParser.urlencoded({ extended: true, }));

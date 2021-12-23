@@ -17,8 +17,22 @@ const config = {
     email : "",
   }, 
   books:{
-    query: '', 
-    value:[]
+    query: '',  
+    value:[],
+  },
+  favorites:{
+    userid : "",
+    isbn13 : "",
+    author : "",
+    title : "",
+    image : "",
+  },
+  history:{
+    userid : "",
+    isbn13 : "",
+    author : "",
+    title : "",
+    image : "",
   }
 };
 

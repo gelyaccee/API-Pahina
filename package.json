@@ -1,11 +1,11 @@
 {
   "name": "api_books_it",
   "version": "0.0.1",
-  "author": "----------------",
-  "description": "--------------",
+  "author": "Angelica Estrada",
+  "description": "For Final Project",
   "main": "main.js",
   "build": {
-    "appId": "com.electon.casys",
+    "appId": "com.electon.books",
     "productName": "Server API",
     "files": [
       "main.js",
